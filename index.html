@@ -1,20 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
         }
-        h1 {
+        header {
+            background-color: #0078d7;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .employee {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .employee:last-child {
+            border-bottom: none;
+        }
+        .employee h3 {
+            margin: 0;
             color: #333;
+        }
+        .employee p {
+            margin: 5px 0;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is a simple webpage hosted on GitHub Pages.</p>
+    <header>
+        <h1>Employee Directory</h1>
+    </header>
+    <div class="container">
+        <div class="employee">
+            <h3>Jane Doe</h3>
+            <p>Role: Software Engineer</p>
+            <p>Email: jane.doe@example.com</p>
+        </div>
+        <div class="employee">
+            <h3>John Smith</h3>
+            <p>Role: Project Manager</p>
+            <p>Email: john.smith@example.com</p>
+        </div>
+        <div class="employee">
+            <h3>Mary Johnson</h3>
+            <p>Role: UI/UX Designer</p>
+            <p>Email: mary.johnson@example.com</p>
+        </div>
+        <div class="employee">
+            <h3>David Brown</h3>
+            <p>Role: Data Scientist</p>
+            <p>Email: david.brown@example.com</p>
+        </div>
+    </div>
 </body>
 </html>
